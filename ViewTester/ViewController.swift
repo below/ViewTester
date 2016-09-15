@@ -10,14 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var containerView: ContainterView!
+    @IBOutlet weak var stackView: UIStackView!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
     @IBAction func ChoiceChanged(_ sender: UISegmentedControl) {
         var newView : UIView!
         switch sender.selectedSegmentIndex {
@@ -36,15 +31,12 @@ class ViewController: UIViewController {
             newView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
             newView.backgroundColor = UIColor.red
         }
-        self.containerView.subview = newView
+        
+        for view in self.stackView.arrangedSubviews {
+            self.stackView.removeArrangedSubview(view)
+        }
+        self.stackView.addArrangedSubview(newView)
 
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

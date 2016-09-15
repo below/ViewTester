@@ -13,7 +13,6 @@
 		CB31013B1D8AC63600DDD172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB31013A1D8AC63600DDD172 /* Assets.xcassets */; };
 		CB31013E1D8AC63600DDD172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB31013C1D8AC63600DDD172 /* LaunchScreen.storyboard */; };
 		CB3101491D8AC63600DDD172 /* ViewTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3101481D8AC63600DDD172 /* ViewTesterTests.swift */; };
-		CB3101541D8AC91A00DDD172 /* ContainterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3101531D8AC91A00DDD172 /* ContainterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +36,6 @@
 		CB3101441D8AC63600DDD172 /* ViewTesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewTesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3101481D8AC63600DDD172 /* ViewTesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTesterTests.swift; sourceTree = "<group>"; };
 		CB31014A1D8AC63600DDD172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB3101531D8AC91A00DDD172 /* ContainterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +79,6 @@
 			children = (
 				CB3101331D8AC63600DDD172 /* AppDelegate.swift */,
 				CB3101351D8AC63600DDD172 /* ViewController.swift */,
-				CB3101531D8AC91A00DDD172 /* ContainterView.swift */,
 				CB3101371D8AC63600DDD172 /* Main.storyboard */,
 				CB31013A1D8AC63600DDD172 /* Assets.xcassets */,
 				CB31013C1D8AC63600DDD172 /* LaunchScreen.storyboard */,
@@ -205,7 +202,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3101361D8AC63600DDD172 /* ViewController.swift in Sources */,
-				CB3101541D8AC91A00DDD172 /* ContainterView.swift in Sources */,
 				CB3101341D8AC63600DDD172 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,13 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="fg5-DA-2R5" customClass="ContainterView" customModule="ViewTester" customModuleProvider="target">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="250" constant="20" id="Xfp-qL-eCH"/>
-                                    <constraint firstAttribute="height" priority="250" constant="20" id="gBh-hn-rd2"/>
-                                </constraints>
-                            </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3Vb-7R-JcB">
                                 <segments>
                                     <segment title="First"/>
@@ -37,18 +30,24 @@
                                     <action selector="ChoiceChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="x8j-9N-LsM"/>
                                 </connections>
                             </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="byB-Ic-jq7">
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="250" constant="100" id="9mW-8Y-2mb"/>
+                                    <constraint firstAttribute="height" priority="250" constant="100" id="o0N-As-ST2"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3Vb-7R-JcB" secondAttribute="bottom" constant="20" id="20H-0q-QE7"/>
-                            <constraint firstItem="fg5-DA-2R5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" priority="750" id="7JK-ms-dKw"/>
+                            <constraint firstItem="byB-Ic-jq7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sq1-3D-c7J"/>
                             <constraint firstItem="3Vb-7R-JcB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="c2u-qv-6t0"/>
-                            <constraint firstItem="fg5-DA-2R5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" priority="750" id="d8k-sU-Eu4"/>
+                            <constraint firstItem="byB-Ic-jq7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vK6-2N-fW1"/>
                             <constraint firstItem="3Vb-7R-JcB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="z5Q-wg-Jih"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="containerView" destination="fg5-DA-2R5" id="7Pm-9a-OlN"/>
+                        <outlet property="stackView" destination="byB-Ic-jq7" id="KaO-5F-Buq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
