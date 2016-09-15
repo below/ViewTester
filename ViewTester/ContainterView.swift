@@ -26,7 +26,9 @@ class ContainterView: UIView {
             if let subview = subview {
                 super.addSubview(subview)
                 let xConstraint = NSLayoutConstraint(item: subview, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1.0, constant: 0)
+                xConstraint.priority = 750
                 let yConstraint = NSLayoutConstraint(item: subview, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1.0, constant: 0)
+                yConstraint.priority = 750
                 self.addConstraints([xConstraint, yConstraint])
             }
         }
