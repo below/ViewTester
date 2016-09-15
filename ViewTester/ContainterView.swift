@@ -24,7 +24,10 @@ class ContainterView: UIView {
                 exisitingView.removeFromSuperview()
             }
             if let subview = subview {
-            super.addSubview(subview)
+                super.addSubview(subview)
+                let xConstraint = NSLayoutConstraint(item: subview, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1.0, constant: 0)
+                let yConstraint = NSLayoutConstraint(item: subview, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1.0, constant: 0)
+                self.addConstraints([xConstraint, yConstraint])
             }
         }
     }
