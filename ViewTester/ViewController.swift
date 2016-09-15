@@ -21,11 +21,12 @@ class ViewController: UIViewController {
         case 1:
             let newLabel = UILabel(frame: CGRect.zero)
             newLabel.text = "Hello, World!"
-            newLabel.sizeToFit()
             newView = newLabel
         case 2:
-            newView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
-            newView.backgroundColor = UIColor.yellow
+            let newLabel = UILabel(frame: CGRect.zero)
+            newLabel.text = "Hello, World!"
+            newLabel.font = UIFont.systemFont(ofSize: 32)
+            newView = newLabel
         default:
             newView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
             newView.backgroundColor = UIColor.red
