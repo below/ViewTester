@@ -17,8 +17,7 @@ class ViewController: UIViewController {
         var newView : UIView!
         switch sender.selectedSegmentIndex {
         case 0:
-            newView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-            newView.backgroundColor = UIColor.blue
+            newView = DisplayView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         case 1:
             let newLabel = UILabel(frame: CGRect.zero)
             newLabel.text = "Hello, World!"
@@ -33,7 +32,7 @@ class ViewController: UIViewController {
         }
         
         for view in self.stackView.arrangedSubviews {
-            self.stackView.removeArrangedSubview(view)
+            view.removeFromSuperview()
         }
         self.stackView.addArrangedSubview(newView)
 
